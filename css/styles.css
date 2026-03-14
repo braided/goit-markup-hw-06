@@ -77,10 +77,13 @@ address {
     0 1px 1px rgba(46, 47, 66, 0.16),
     0 2px 1px rgba(46, 47, 66, 0.08);
 }
+
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -94,7 +97,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #2e2f42;
-  margin-right: 76px;
+ 
 }
 
 .logo-accent {
@@ -332,7 +335,7 @@ address {
     gap: 72px 24px;
   }
   .feature-item {
-    flex-basis: calc((100% - 72px) / 2);
+    flex-basis: calc((100% - 24px) / 2);
   }
 }
 @media screen and (min-width: 1158px) {
@@ -340,7 +343,7 @@ address {
     max-width: 1158px;
   }
   .feature-item {
-    flex-basis: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 24px) / 4);
   }
 }
 
@@ -447,7 +450,7 @@ address {
 }
 @media screen and (min-width: 1158px) {
   .team-member {
-    flex-basis: calc((100% - 24px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
   }
 }
 .team-member-content {
@@ -515,7 +518,7 @@ address {
 }
 @media screen and (min-width: 1158px) {
   .portfolio-item {
-    flex-basis: calc((100% - 24px) / 3);
+    flex-basis: calc((100% - 48px) / 3);
   }
 }
 @media screen and (max-width: 1157px) {
@@ -825,6 +828,7 @@ address {
   background-color: #fcfcfc;
   padding: 72px 16px 24px;
   width: calc(100vw - 32px);
+  max-width: 288px;
   border-radius: 4px;
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
@@ -836,17 +840,12 @@ address {
   .modal {
     padding: 72px 24px 24px;
     width: 408px;
-    top: 96px;
-    left: 180px;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .modal {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
 }
+
 .cross-button {
   display: flex;
   justify-content: center;
@@ -1034,9 +1033,6 @@ address {
     display: flex;
     gap: 121px;
     align-items: center;
-  }
-  .mobile-menu {
-    display: none;
   }
 }
 @media screen and (min-width: 1158px) {

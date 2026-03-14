@@ -840,12 +840,13 @@ address {
   display: flex;
   gap: 16px;
   flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .form-subscribe {
     flex-direction: row;
-    align-items: center;
+
     gap: 24px;
   }
 }

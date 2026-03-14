@@ -483,7 +483,7 @@ address {
 
 @media screen and (min-width: 1158px) {
   .team-container {
-    padding: 0 16px;
+    padding: 0 15px;
   }
 }
 
@@ -859,7 +859,7 @@ address {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
-  margin: 0 auto;
+  margin: 0;
   cursor: pointer;
   border-radius: 4px;
   width: 165px;
@@ -923,7 +923,7 @@ address {
 @media screen and (max-width: 767px) {
   .mobile-menu {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     inset: 0;
